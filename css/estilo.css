@@ -1,325 +1,341 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 
-
+/*-------------------------------------------------------Todo el documento------------------------------------------------------------*/
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+    margin: 0;/*Quitamos los margenes de la pagina*/
+    padding: 0;/*Quitamos el relleno de la pagina*/
+    box-sizing: border-box;/*Para que la caja este dentro de la caja, que no haya nada fuera*/
+    scroll-behavior: smooth;/*Para hacer que los efectos de transicion sean suaves*/
 }
 
-body { 
-    color: #7f888f; 
-    font-family: "Open Sans", sans-serif; 
-    font-size: 13pt; 
-    font-weight: 400; 
-    line-height: 1.5; 
-}
-
-
-
-img { 
-    max-width: 100%; 
-    height: auto;
-    border-radius: 0.375em; 
-}
-
-a { 
-    text-decoration: none; 
-    color: #7f888f; 
-}
-
-li {
-    list-style: none; 
-}
-
-p {
-    margin: 0 0 2em 0; 
-    font-size: 16px; 
-}
-
-article>h3 {
-    margin: 1em 0 1em 0; 
-}
-
-a.image:hover img {
-    transform: scale(1.075);
+body { /*a todo el body*/
+    color: #7f888f; /*texto de este color*/
+    font-family: "Open Sans", sans-serif; /*tipo de letra*/
+    font-size: 13pt; /*tamaño del texto*/
+    font-weight: 400; /*grosor del texto*/
+    line-height: 1.5; /*separacion entre lineas*/
 }
 
 
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------ELEMENTOS---------------------------------------------------------------*/
+
+img { /*Para todas las imagenes*/
+    max-width: 100%; /*ancho maximo de un 100%*/
+    height: auto;/*altura automatica*/
+    border-radius: 0.375em; /*borde redondeado*/
+}
+
+a { /*Para los enlaces*/
+    text-decoration: none; /*quitamos el subrayado*/
+    color: #7f888f; /*color del texto*/
+}
+
+li { /*A los li*/
+    list-style: none; /*Para quitar los puntos de la lista*/
+}
+
+p {/*a los parrafos*/
+    margin: 0 0 2em 0; /*margen inferior de 2em*/
+    font-size: 16px; /*tamaño de la fuente*/
+}
+
+article>h3 {/*al h3 del article*/
+    margin: 1em 0 1em 0; /*margen superior, margin inferior*/
+}
+
+a.image:hover img {/*a las imagenes cuando pasas el cursor por encima*/
+    transform: scale(1.075);/*Para hacer una escala cuando pases el cursor por encima*//*https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_scale*/ 
+}
+
+/*---------------------------------------------------------------TITULOS-----------------------------------------------------------------*/
 h1,h2,h3 {
-    color: #3d4449;
-    font-family: "Roboto Slab", serif;
-    font-weight: 700;
-    line-height: 1.4;
-    font-size: 1em;
+    color: #3d4449;/*Color del texto*/
+    font-family: "Roboto Slab", serif;/*fuente del texto*/
+    font-weight: 700;/*Grosor de la fuente*/
+    line-height: 1.4;/*Separacion entre lineas*/
+    font-size: 1em;/*Tamaño de la fuente*/
 }
 
 h3 {
-    font-size: 1.25em;
+    font-size: 1.25em;/*tamaño de la fuente*/
 }
 
-
-#header {
-    font-size: 18px;
-    display: flex;
-    border-bottom: solid 5px #f56a6a;
-    padding: 2em 0.75em 0.5em 0em; 
-    margin: 0 0 2em 0;  
-    justify-content: space-between;
-    color: #7f888f;
+/*----------------------------------------------------------------MEZCLA----------------------------------------------------------------*/
+/*----------------------------------------------------------------IDE's----------------------------------------------------------------*/
+#header {/*a todos los titulos que tienes clase header*/
+    font-size: 18px;/*tamaño del texto*/
+    display: flex;/*para que los iconos se pongan al lado del titulo*/
+    border-bottom: solid 5px #f56a6a;/*Una linea debajo del header*/
+    padding: 2em 0.75em 0.5em 0em; /*separacion*/
+    margin: 0 0 2em 0;  /*margen*/
+    justify-content: space-between;/*Separar los elementos del header*/
+    color: #7f888f;/*texto de color*/
 }
 
-#web {
-    display: flex;
-    width: 100%; 
+#web {/*al id web*/
+    display: flex; /*una cosa al lado de la otra*/
+    width: 100%; /*anchura del 100%*/
 }
 
+/*----------------------------------------------------------------MEZCLA----------------------------------------------------------------*/
+/*----------------------------------------------------------------CLASES----------------------------------------------------------------*/
 .button {
-    border-radius: 0.375em;
-    box-shadow: inset 0 0 0 2px #f56a6a;
-    color: #f56a6a !important;
-    display: inline-block;
-    font-size: 0.8em;
-    font-weight: 700;
-    letter-spacing: 0.075em;
-    line-height: 3.5em;
-    padding: 0 2.25em;
-    text-align: center;
-    text-transform: uppercase;
+    border-radius: 0.375em;/*un borde redondeado*/
+    box-shadow: inset 0 0 0 2px #f56a6a;/*efecto sombra, inset hace que la sombra sea dentro de la caja*/
+    color: #f56a6a !important;/*color del texto*/
+    display: inline-block;/*permite poner un ancho y alto*/
+    font-size: 0.8em;/*tamaño de la fuente*/
+    font-weight: 700;/*grosor de la fuente*/
+    letter-spacing: 0.075em;/*espacio entre letras*/
+    line-height: 3.5em;/*separacion entre lineas*/
+    padding: 0 2.25em;/*separacion*/
+    text-align: center;/*texto al centro*/
+    text-transform: uppercase;/*pasar el texto de submenu a mayuscula*/
 }
 
-.titulos {
-    border-bottom: solid 3px #f56a6a;
-    font-size: 1.75em; 
-    margin: 0 0 1em 0;
-    padding: 0 0.75em 0.5em 0;
-    display: inline-block; 
+.titulos {/*Titulo h2*/
+    border-bottom: solid 3px #f56a6a;/*un borde abajo de h2 color rosa*/
+    font-size: 1.75em; /*Tamaño de la fuente*/
+    margin: 0 0 1em 0;/*margen*/
+    padding: 0 0.75em 0.5em 0;/*relleno, espacio*/
+    display: inline-block; /*para que sean en linea y mantengan margenes*/
 }
 
 
-
+/*--------------------------------------------------------------BARRA LATERAL--------------------------------------------------------------*/
+/*----------------------------------------------------------------ELEMENTOS----------------------------------------------------------------*/
 input {
-    width: 90%;
-    border: solid 1px rgba(210, 215, 217, 0.75); 
-    border-radius: 5px; 
-    margin-bottom: 1cm;
+    width: 90%;/*anchura del 90%*/
+    border: solid 1px rgba(210, 215, 217, 0.75); /*borde de 1px del color*/
+    border-radius: 5px; /*radio del borde para que quede redondeado*/
+    margin-bottom: 1cm;/*margen inferior*/
 }
 
-input[type="text"] { 
-    padding: 0 1em; 
-    height: 2.75em; 
+input[type="text"] { /*al input de tipo texto*/
+    padding: 0 1em; /* una separacion de 0 y 1em*/
+    height: 2.75em; /*altura*/
 }
 
-nav {
-    margin-bottom:3.5em;
-    padding: 20px;
+nav {/*a los nav*/
+    margin-bottom:3.5em;/*margen inferior*/
+    padding: 20px;/*separacion de 20px*/
     border-bottom: solid 2px rgba(210, 215, 217, 0.75);
     font-size: 15px;
     font-weight: 100;
 }
 
-.posts article { 
-    position: relative;
-    display: flex;
-    flex-flow: column wrap;
-    width: calc(33% - 6em);
-    margin: 0 0 6em 6em; 
+.posts article { /*a los article que estan dentro de la clase posts*/
+    position: relative;/*posicion relativa*/
+    display: flex;/*poner cosas unas al lado de otras*/
+    flex-flow: column wrap;/*posicionar por columnas*/
+    width: calc(33% - 6em);/*anchura maxima*/
+    margin: 0 0 6em 6em; /*margenes*/
 }
 
-.mini-posts article {
-    border-top: solid 1px rgba(210, 215, 217, 0.75);
-    margin-top: 2em;
-    padding-top: 2em;
+.mini-posts article {/*a los articulos de la clase mini-posts*/
+    border-top: solid 1px rgba(210, 215, 217, 0.75);/*una linea abajo de 1px de color*/
+    margin-top: 2em;/*margen superior*/
+    padding-top: 2em;/*espacio superior*/
 }
 
 
+/*------------------------BARRA LATERAL------------------------*/
+/*---------------------------MENU------------------------*/
 
-
-#menu li>ul {
-    display: none; 
+#menu li>ul { /*Al "ul" hijo de un "li" que está dentro de menu*/
+    display: none; /*Desaparece el submenu*/
 }
 
-#menu li>a {
-    color: #3d4449;
+#menu li>a {/*Para los enlaces de menu*/
+    color: #3d4449;/*color de los enlaces del menu*/
 }
 
 #menu li:hover>ul {
-    display: block;
+    display: block;/*Para desplegar el submenu*/
 }
 
-#menu a:hover, #menu span:hover{ 
-    color: #C93C20; 
+#menu a:hover, #menu span:hover{ /*a las a de menu y a los span de menu, cuando se pase el cursos el color del texto cambiará*/
+    color: #C93C20; /*color texto conla funcion hover*/
 }
 
-#menu ul>li:not(.linodesple) {
-    border-bottom: solid 1px darkgrey;
+#menu ul>li:not(.linodesple) {/*a todos los "li" menos a los que tienen la clase nodesplegable*/
+    border-bottom: solid 1px darkgrey;/*borde bajo de 1px*/
 }
 
-#barra h2 {
-    font-size: 0.75em;
+#barra h2 {/*a los h2 dentro de la barra lateral*/
+    font-size: 0.75em;/*Tamaño de texto*/
 }
 
-#menu>ul {
-    margin-top: 15px;
+#menu>ul {/*Al ul hijo de menu*/
+    margin-top: 15px; /*Margen superir de 15px*/
 }
 
-#menu li {
-    padding: 2%;
-}
-
-
-
-ul.contacto li:before {
-    color: #f56a6a;
-    height: 1.125em;
-    text-align: center;
-    padding-right: 0.5cm;
-}
-
-ul.contacto li {
-    border-top: 1px solid rgba(210, 215, 217, 0.75);
-    margin: 1.5em 0 0 0;
-    padding: 1.5em 0 0 1em;
+#menu li { /*A los "li"*/
+    padding: 2%;/*espacio de un 2% alrededor del "li"*/
 }
 
 
-.nodesplegable {
-    color: #9fa3a6 !important;
+/*------------------------BARRA LATERAL------------------------*/
+/*---------------------------CONTACTOS------------------------*/
+ul.contacto li:before {/* a la primera parte del li del ul con clase contacto*/
+    color: #f56a6a;/*color del icono*/
+    height: 1.125em;/*altura*/
+    text-align: center;/*texto al centro*/
+    padding-right: 0.5cm;/*separacion derecha*/
+}
+
+ul.contacto li {/*li del ul con clase contacto*/
+    border-top: 1px solid rgba(210, 215, 217, 0.75);/*borde top de 1 px de color*/
+    margin: 1.5em 0 0 0;/*margen superior*/
+    padding: 1.5em 0 0 1em;/*separacion superior y de izquierda*/
+}
+
+/*--------------------------------------------------------------BARRA LATERAL--------------------------------------------------------------*/
+/*-----------------------------------------------------------------CLASES-----------------------------------------------------------------*/
+.nodesplegable {/*a las "a" de clase nodesplegable*/
+    color: #9fa3a6 !important;/*Color del texto*/
 }
 
 .posts {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 0 2em -6em;
+    display: flex;/*unos al lado de otros*/
+    flex-wrap: wrap;/*se colocaran en varias lineas*/
+    margin: 0 0 2em -6em;/*margen*/
 }
 
-.mini-posts img{
-    width: 100%;
+.mini-posts img{/*a las imagenes de la clase mini-posts*/
+    width: 100%;/*ancho del 100%*/
 }
 
-
-#barra {
-    width: 20%;
-    background-color: #f5f6f7;
+/*--------------------------------------------------------------BARRA LATERAL--------------------------------------------------------------*/
+/*-----------------------------------------------------------------IDE's-----------------------------------------------------------------*/
+#barra {/*TODO el menu lateral*/
+    width: 20%;/*anchura del 20%*/
+    background-color: #f5f6f7;/*Color de fondo*/
 }
 
 #buscador {
-    background-color: #eff1f2; 
-    padding: 20px; 
+    background-color: #eff1f2; /*Fondo del buscador*/
+    padding: 20px; /*Hace que tenga una separacion de 20px*/
 }
 
-#menu {
-    font-size: 14px;
-    color: #3d4449; 
-    line-height: 1cm;
-    padding-bottom: 4em;
+#menu {/*El menu donde estan los deplegables*/
+    font-size: 14px;/*Tamaño de texto*/
+    color: #3d4449; /*Color del texto*/
+    line-height: 1cm;/*Separacion entre lineas*/
+    padding-bottom: 4em;/*separacion inferior*/
 }
 
 #footer {
-    padding: 20px;
+    padding: 20px;/*separacion*/
 }
 
-#footer a, #footer p{
-    font-size: 12px;
-    color: #9fa3a6;
+#footer a, #footer p{/*a las a dentro de footer y a las p dentro de footer*/
+    font-size: 12px;/*tamaño del texto*/
+    color: #9fa3a6;/*color del texto*/
 
 }
 
+
+
+/*----------------------------------------------------------------RELLENO----------------------------------------------------------------*/
+/*---------------------------------------------------------------ELEMENTOS---------------------------------------------------------------*/
 
 #iconos i {
-    margin: 0 1em 0 0;
+    margin: 0 1em 0 0;/*margen entre los iconos*/
 }
 
 #encabezado h1 {
-    font-size: 3em;
-    margin-bottom: 0.5em;
+    font-size: 3em;/*tamaño de la fuente*/
+    margin-bottom: 0.5em;/*margen inferior*/
 }
 
 #encabezado p {
-    font-size: 1em;
-    letter-spacing: 0.075em;
-    text-transform: uppercase;
+    font-size: 1em;/*tamaño de la fuente*/
+    letter-spacing: 0.075em;/*espacio entre las letras*/
+    text-transform: uppercase;/*pasar el texto de submenu a mayuscula*/
 }
 
 #imagen img {
-    height: 100%;
-    object-fit: cover;
+    height: 100%;/*altura del 100%*/
+    object-fit: cover;/*https://caniuse.com/?search=object-fit recubir la imagen en funcion al tamaño*/
 }
 
 .content p {
-    font-size: 16px;
-    width: 75%;
-    margin-top: 7px;
+    font-size: 16px;/*tamaño de la fuente*/
+    width: 75%;/*ancho*/
+    margin-top: 7px;/*separacion del texto y el h3*/
 }
 
-article>span {
-    text-align: center;
-    padding: 4%;
+article>span {/*al icono*/
+    text-align: center;/*texto al centro*/
+    padding: 4%;/*separacion de un 4% por todos los lados*/
 }
 
 .articulos article {
-    width: calc(50% - 3em);
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin: 0 0 3em 3em;
+    width: calc(50% - 3em);/*ancho*/
+    position: relative;/*posicion relativa*/
+    display: flex;/*unos al lado de otros*/
+    align-items: center;/*items centrados*/
+    margin: 0 0 3em 3em;/*margenes*/
 }
 
-
+/*----------------------------------------------------------------RELLENO----------------------------------------------------------------*/
+/*----------------------------------------------------------------CLASES----------------------------------------------------------------*/
 .text {
-    font-size: 1.3em;
+    font-size: 1.3em;/*tamaño de la fuente*/
 }
 
-p.text {
-    font-family: "Roboto Slab", serif !important;
-    font-size: 103%;
-    max-width: 90%;
+p.text {/*al parrafo de la clase text*/
+    font-family: "Roboto Slab", serif !important;/*tipo de letra*/
+    font-size: 103%;/*tamaño texto*/
+    max-width: 90%;/*ancho maximo*/
 }
 
 .dolor {
-    border-top: solid 2px rgba(210, 215, 217, 0.75);
-    padding: 6em 0 4em 0;
+    border-top: solid 2px rgba(210, 215, 217, 0.75);/*borde superior de 2px con color*/
+    padding: 6em 0 4em 0;/*separacion*/
 }
 
 .cuatro {
-    border-top: solid 2px rgba(210, 215, 217, 0.75);
-    padding: 6em 0em 4em 0;
+    border-top: solid 2px rgba(210, 215, 217, 0.75);/*borde superior de 2px con color*/
+    padding: 6em 0em 4em 0;/*espacio superior de 5em, inferior de 3em e izquierdo 6.4em*/
 }
 
 .articulos {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 4em;
+    display: flex;/*los articulos tienen que ir uno al lado del otro, de 2 en 2*/
+    flex-wrap: wrap;/*para meter los elementos en varias lineas*/
+    padding-left: 4em;/*separacion izquierda*/
 }
 
 .icon {
-    color: #f56a6a;
-    font-size: 2.75rem;
-    border-radius: 0.25rem;
-    border: solid 2px rgba(210, 215, 217, 0.75);  
-    height: 2.25em;
-    position: absolute;
-    width: 2.25em;
-    left: -3cm;
+    color: #f56a6a;/*color del icono*/
+    font-size: 2.75rem;/*tamaño*/
+    border-radius: 0.25rem;/*borde redondeado*/
+    border: solid 2px rgba(210, 215, 217, 0.75);/*borde solido de color y 2px*/   
+    height: 2.25em;/*altura*/
+    position: absolute;/*para poder decidir su posicion*/
+    width: 2.25em;/*anchura*/
+    left: -3cm;/*a la izquierda -3*/
 }
 
 
 
-
+/*----------------------------------------------------------------RELLENO----------------------------------------------------------------*/
+/*----------------------------------------------------------------IDE's----------------------------------------------------------------*/
 #relleno {
-    height: 100%;
-    width: 80%;
-    padding: 0 5em 0.1em 5em;
+    height: 100%;/*altura del 100%*/
+    width: 80%;/*anchura del 80%*/
+    padding: 0 5em 0.1em 5em;/*separacion*/
 }
 #textimag {
-    display: flex; 
-    justify-content: space-between;
-    padding: 5em 0 3em 0; 
+    display: flex; /*se tienes que poner dentro del div cosas una al lado de otras*/
+    justify-content: space-between;/*Los elementos se alinean añadiendo espacio entre ellos.*/
+    padding: 5em 0 3em 0; /*padding superior e inferior*/
 }
 
 #textoizquierda {
-    max-width: 50%;
+    max-width: 50%;/*maximo de ancho*/
 }
